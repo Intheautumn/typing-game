@@ -144,8 +144,7 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-#game-over-alert,
-#game-successful-alert h1 {
+#game-over-alert h1 {
     width: 150px;
     margin: 0 auto;
     margin-top: -40px;
@@ -153,8 +152,7 @@ body {
     text-shadow: 0 0 15px rgb(85, 255, 227);
 }
 
-#game-over-alert,
-#game-successful-alert #restart-btn {
+#game-over-alert #restart-btn {
     font-size: 24px;
     margin-top: 20px;
 }

@@ -8,7 +8,7 @@ let config = {
 }
 
 // 得分
-let score = 49;
+let score = 45;
 
 // 开始页面
 let startAlert = document.querySelector('#start-alert')
@@ -142,7 +142,7 @@ function gameOver(e) {
     clearInterval(updater)
     config.status = 2;
     if (e == 1) {
-        successful.style.display = 'block'
+        .style.display = 'block'
     } else {
         gameOverAlert.style.display = 'block'
     }
@@ -217,12 +217,7 @@ function resetGame() {
 // 下一关
 let next = document.querySelector('#restart-btn-next')
 next.onclick = function() {
-    successful.style.display = 'none'
-    config.speed++
-        config.status = 1
-    score = 49
-    scoreLabel.innerHTML = score
-    game.innerHTML = ''
-    virues = []
-    startGame()
+    next.style.display = 'none'
+    config.speed = 5
+    resetGame()
 }

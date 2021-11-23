@@ -218,11 +218,6 @@ function resetGame() {
 let next = document.querySelector('#restart-btn-next')
 next.onclick = function() {
     successful.style.display = 'none'
-    config.speed++
-        config.status = 1
-    score = 49
-    scoreLabel.innerHTML = score
-    game.innerHTML = ''
-    virues = []
-    startGame()
+    config.speed = 4
+    resetGame()
 }

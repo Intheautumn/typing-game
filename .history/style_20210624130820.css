@@ -38,10 +38,8 @@ body {
     z-index: 10;
 }
 
-
 /* 分数的样式 */
-
-#ui .score-ui {
+#ui .score-ui{
     width: 120px;
     height: 40px;
     margin-left: 20px;
@@ -49,18 +47,19 @@ body {
     border-bottom: solid 2px #40c061;
     padding: 5px;
 }
-
-#ui .score-ui img {
+#ui .score-ui img{
     width: 40px;
     height: 40px;
 }
 
-#ui .score-ui span {
+#ui .score-ui span{
     color: #fff;
     font-size: 30px;
     position: absolute;
     left: 80px;
 }
+
+
 
 #ui #start-alert {
     width: 100%;
@@ -96,7 +95,13 @@ body {
 
 #start-alert footer #start-btn {
     font-size: 36px;
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #b6ff00, 0 0 7px #b6ff00, 0 0 10px #b6ff00, 0 0 15px #b6ff00;
+    text-shadow:
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 4px #b6ff00,
+        0 0 7px #b6ff00,
+        0 0 10px #b6ff00,
+        0 0 15px #b6ff00;
 }
 
 #start-alert footer p {
@@ -122,12 +127,8 @@ body {
 
 
 /* 游戏结束的样式 */
-
-
 /* 任务失败页面 */
-
-#game-over-alert,
-#game-successful-alert {
+#game-over-alert {
     width: 240px;
     height: 80px;
     border: solid 1px rgb(85, 255, 227);
@@ -141,27 +142,27 @@ body {
     margin-top: -100px;
     z-index: 30;
     display: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:rgba(0,0,0,0.3);
 }
 
-#game-over-alert,
-#game-successful-alert h1 {
+#game-over-alert h1 {
     width: 150px;
     margin: 0 auto;
     margin-top: -40px;
     /* color:  rgb(85, 255, 227); */
-    text-shadow: 0 0 15px rgb(85, 255, 227);
+    text-shadow: 0 0 15px  rgb(85, 255, 227);
 }
 
-#game-over-alert,
-#game-successful-alert #restart-btn {
+#game-over-alert #restart-btn {
     font-size: 24px;
     margin-top: 20px;
 }
 
 
-/* 滑动动画 */
 
+
+
+/* 滑动动画 */
 .slide-up {
     transform: translateY(-600px);
     transition: transform .4s ease-in-out;
@@ -173,8 +174,8 @@ body {
 }
 
 
-/* 病毒的样式 */
 
+/* 病毒的样式 */
 .virus {
     width: 80px;
     height: 80px;
@@ -202,9 +203,7 @@ body {
     box-shadow: 0 0 15px #f00;
 }
 
-
 /* 警告页面 */
-
 .warning {
     width: 100%;
     height: 100%;
@@ -215,25 +214,23 @@ body {
     opacity: 0;
 }
 
-
 /* 警告动画 */
-
 @keyframes color-fade {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
 }
 
-
 /* 病毒消失的动画 */
-
-.fade-out {
+.fade-out{
     opacity: 0;
     transition: opacity 1s;
 }

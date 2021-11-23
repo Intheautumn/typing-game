@@ -218,11 +218,13 @@ function resetGame() {
 let next = document.querySelector('#restart-btn-next')
 next.onclick = function() {
     successful.style.display = 'none'
-    config.speed++
-        config.status = 1
-    score = 49
+    config.speed = 4
+    config.status = 1
+    score = 0
     scoreLabel.innerHTML = score
     game.innerHTML = ''
     virues = []
+        // uiLayer.removeChild(document.querySelector('.warning'))
+    uiLayer.warning = false
     startGame()
 }

@@ -224,5 +224,7 @@ next.onclick = function() {
     scoreLabel.innerHTML = score
     game.innerHTML = ''
     virues = []
+        // uiLayer.removeChild(document.querySelector('.warning'))
+        // uiLayer.warning = false
     startGame()
 }

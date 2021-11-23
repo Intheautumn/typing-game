@@ -8,7 +8,7 @@ let config = {
 }
 
 // 得分
-let score = 49;
+let score = 45;
 
 // 开始页面
 let startAlert = document.querySelector('#start-alert')
@@ -218,11 +218,7 @@ function resetGame() {
 let next = document.querySelector('#restart-btn-next')
 next.onclick = function() {
     successful.style.display = 'none'
-    config.speed++
-        config.status = 1
-    score = 49
-    scoreLabel.innerHTML = score
-    game.innerHTML = ''
-    virues = []
+    config.speed = 4
+    config.status = 2
     startGame()
 }

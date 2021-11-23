@@ -8,7 +8,7 @@ let config = {
 }
 
 // 得分
-let score = 49;
+let score = 0;
 
 // 开始页面
 let startAlert = document.querySelector('#start-alert')
@@ -135,17 +135,12 @@ function showWarning() {
 }
 
 let gameOverAlert = document.querySelector('#game-over-alert')
-let successful = document.querySelector('#game-successful-alert')
     // 游戏介绍
-function gameOver(e) {
+function gameOver() {
     clearInterval(timer)
     clearInterval(updater)
     config.status = 2;
-    if (e == 1) {
-        successful.style.display = 'block'
-    } else {
-        gameOverAlert.style.display = 'block'
-    }
+    gameOverAlert.style.display = 'block'
 }
 
 
@@ -186,9 +181,7 @@ window.addEventListener('keyup', function(e) {
             xmEffect.play()
 
 
-            if (score == 50) {
-                gameOver(1)
-            }
+            if (score == 50) {}
 
 
         }
@@ -211,18 +204,5 @@ function resetGame() {
     virues = []
     uiLayer.removeChild(document.querySelector('.warning'))
     uiLayer.warning = false;
-    startGame()
-}
-
-// 下一关
-let next = document.querySelector('#restart-btn-next')
-next.onclick = function() {
-    successful.style.display = 'none'
-    config.speed++
-        config.status = 1
-    score = 49
-    scoreLabel.innerHTML = score
-    game.innerHTML = ''
-    virues = []
     startGame()
 }
